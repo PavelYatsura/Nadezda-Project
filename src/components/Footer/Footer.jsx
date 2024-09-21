@@ -1,7 +1,11 @@
+import "./Footer.sass";
+
 export default function Footer() {
   return (
     <>
-      <div>Footer</div>
+      <footer className="footer">
+        <h2 className="footer__title">© Nadezhda Yatsura 2024</h2>
+      </footer>
     </>
   );
 }

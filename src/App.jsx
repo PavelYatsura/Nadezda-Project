@@ -1,7 +1,17 @@
-import "./App.css";
+
+import "./App.sass";
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
-  return <></>;
+  return (
+    <div className="app">
+      <Header></Header>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </div>
+  );
 }
 
 export default App;
