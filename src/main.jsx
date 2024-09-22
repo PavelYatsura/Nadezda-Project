@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Work from "./pages/Work/Work";
+import Works from "./pages/Works/Works";
 import Personal from "./pages/Personal/Personal";
 import Retouch from "./pages/Retouch/Retouch";
 import About from "./pages/About/About";
 import Error from "./pages/Error/Error";
 import App from "./App";
+import Photoshoots from "./pages/Photoshoots/Photoshoots";
 
 
 
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Work></Work>,
+        element: <Works></Works>,
       },
       {
         path: "/personal",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/photoshoots/:id",
+        element: <Photoshoots></Photoshoots>,
       },
     ],
   },
