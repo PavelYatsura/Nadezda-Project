@@ -6,15 +6,8 @@ export default defineConfig({
   plugins: [react()],
   css: {
     preprocessorOptions: {
-      less: {
-        math: "parens-division",
-      },
-      
       scss: {
-        api: "modern-compiler", // or "modern", "legacy"
-        importers: [
-          // ...
-        ],
+        silenceDeprecations: ["legacy-js-api"],
       },
     },
   },

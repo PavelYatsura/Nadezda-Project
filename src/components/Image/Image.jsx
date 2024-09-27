@@ -4,9 +4,9 @@ import {Link} from "react-router-dom"
 
 export default function Image({ src, alt , id}) {
   Image.propTypes = {
-    src: PropTypes.any,
-    alt: PropTypes.any,
-    id: PropTypes.any,
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    id: PropTypes.number,
   };
 
   return (
