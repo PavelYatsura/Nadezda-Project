@@ -1,5 +1,17 @@
-import Work from "../../components/Work/Work";
+import "./Works.sass";
+import { IMAGES } from "../../main-iamge";
+import { Link } from "react-router-dom";
 
-export default function Works() {
-  return <Work></Work>;
+export default function Work() {
+  return (
+    <>
+      <div className="container container-work">
+        {IMAGES.map((p) => (
+          <Link  key={p.id} to={`/photoshoots/${p.id}`}>
+            <img className="img-work" src={p.src} alt={p.src} />
+          </Link>
+        ))}
+      </div>
+    </>
+  );
 }
