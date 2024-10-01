@@ -17,12 +17,13 @@ export default function ImagesSlider({ data }) {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
   console.log(slide);
+  console.log(setSlide);
   return (
     <div className="container-carusel">
       <div className="carusel">
-        <button className="btn btn__back" onClick={prevSLide}>
-          back
-        </button>
+        <a className="btn btn__prev btn__black" onClick={prevSLide}>
+        &#10094;
+        </a>
         {data.map((item, idx) => (
           <img
             key={idx}
@@ -31,9 +32,9 @@ export default function ImagesSlider({ data }) {
             className={slide === idx ? "slide" : "slide__hidden"}
           ></img>
         ))}
-        <button className="btn btn__next" onClick={nextSLide}>
-          next
-        </button>
+        <a className="btn btn__next btn__black" onClick={nextSLide}>
+        &#10095;
+        </a>
       </div>
       <span className="indicators">
         {data.map((_, idx) => {

@@ -9,8 +9,6 @@ import Error from "./pages/Error/Error";
 import App from "./App";
 import Photoshoots from "./pages/Photoshoots/Photoshoots";
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",
