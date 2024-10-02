@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { personalImage } from "../../parsonal-image";
-import "./Personal.sass";
+import { personalImage } from "../../parsonal-image.js";
+import "./Personal.css";
 export default function Personal1() {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
@@ -26,7 +26,7 @@ export default function Personal1() {
       {openModal && (
         <div className="slider">
           <a className="btn btn__prev" onClick={handelClickBack}>
-          &#10094;
+            &#10094;
           </a>
           <span className="close" onClick={handelClickClose}>
             &times;
@@ -38,7 +38,7 @@ export default function Personal1() {
             />
           </div>
           <a className="btn btn__next" onClick={handelClickNext}>
-          &#10095;
+            &#10095;
           </a>
         </div>
       )}
@@ -59,3 +59,4 @@ export default function Personal1() {
     </div>
   );
 }
+

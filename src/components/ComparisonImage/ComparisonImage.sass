@@ -1,0 +1,29 @@
+.ComparisonImage
+    position: relative
+    width: 500px
+    height: 700px
+    -webkit-user-select: none
+    -ms-user-select: none
+    user-select: none
+    display: flex
+    justify-content: center
+    &__img
+        width: 500px
+        height: 700px
+    &__overlay
+        position: absolute
+        left: 0
+        top: 0
+        width: 50%
+        overflow: hidden
+        border-right: 1px solid  #c4c4c4
+    &__slider
+        position: absolute
+        width: 25px
+        height: 25px
+        border-radius: 50%
+        background: #c4c4c4
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        cursor: ew-resize

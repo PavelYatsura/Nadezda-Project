@@ -1,7 +1,7 @@
 export const  IMAGES  = [
   {
     id: 1,
-    src: "./gallery/Work/work-1/Эля_2.jpg",
+    src: "./gallery/Work/work-1/Эля_1.jpg",
     alt: "Эля.jpg",
     images: [
       { src: "./gallery/Work/work-1/Эля_1.jpg", alt: "Эля.jpg" },

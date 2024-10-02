@@ -1,5 +1,5 @@
-import "./Works.sass";
-import { IMAGES } from "../../main-iamge";
+import "./Works.css";
+import { IMAGES } from "../../main-iamge.js";
 import { Link } from "react-router-dom";
 
 export default function Work() {

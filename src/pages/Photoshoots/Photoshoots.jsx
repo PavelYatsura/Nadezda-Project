@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { IMAGES } from "../../main-iamge";
+import { IMAGES } from "../../main-iamge.js";
 import ImagesSlider from "../../components/ImagesSlider/ImagesSlider";
-import "./Photo.sass";
+import "./Photo.css";
 
 export default function Photoshoots() {
   const { id } = useParams();

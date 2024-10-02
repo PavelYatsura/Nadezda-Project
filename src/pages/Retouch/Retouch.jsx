@@ -1,7 +1,13 @@
+import ComparisonImage from "../../components/ComparisonImage/ComparisonImage";
+import { retouchImage } from "../../retouche-image.js";
+import "./Retouch.css"
+
 export default function Retouch() {
   return (
-    <>
-      <div>Retouch</div>
-    </>
+    <div className="container retouch ">
+      <ComparisonImage data={retouchImage} />
+    </div>
   );
 }
+
+

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import "./ImagesSlider.sass";
+import "./ImagesSlider.css";
 
 export default function ImagesSlider({ data }) {
   ImagesSlider.propTypes = {
@@ -16,13 +16,12 @@ export default function ImagesSlider({ data }) {
   const prevSLide = () => {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
-  console.log(slide);
-  console.log(setSlide);
+
   return (
     <div className="container-carusel">
       <div className="carusel">
         <a className="btn btn__prev btn__black" onClick={prevSLide}>
-        &#10094;
+          &#10094;
         </a>
         {data.map((item, idx) => (
           <img
@@ -33,7 +32,7 @@ export default function ImagesSlider({ data }) {
           ></img>
         ))}
         <a className="btn btn__next btn__black" onClick={nextSLide}>
-        &#10095;
+          &#10095;
         </a>
       </div>
       <span className="indicators">

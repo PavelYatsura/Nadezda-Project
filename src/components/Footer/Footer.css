@@ -1,0 +1,9 @@
+.footer {
+  box-shadow: 0px -4px 20px rgba(31, 32, 65, 0.05);
+  padding: 0 10rem;
+}
+.footer__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0;
+}/*# sourceMappingURL=Footer.css.map */
