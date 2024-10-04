@@ -46,3 +46,7 @@
   background-color: #c4c4c4;
 }
 
+@font-face {
+  font-family: "REM";
+  src: url("/fonts/REM-Regular.ttf");
+}

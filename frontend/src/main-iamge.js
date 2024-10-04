@@ -1,4 +1,4 @@
-export const  IMAGES  = [
+export const IMAGES = [
   {
     id: 1,
     src: "./gallery/Work/work-1/Эля_1.jpg",
@@ -68,3 +68,5 @@ export const  IMAGES  = [
     ],
   },
 ];
+
+export const ABOUT = { src: "./gallery/Foto-about.jpg" };
