@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import "./ImagesSlider.css";
 import React from "react";
@@ -15,9 +14,9 @@ export default function ImagesSlider({ data }) {
   };
 
   return (
-    <div className="container-carusel">
-      <div className="carusel">
-        <a className="btn btn__prev btn__black" onClick={prevSLide}>
+    <div className="container imageslider">
+      <div className="imageslider__wrapper">
+        <a className="btn imageslider__btn imageslider__btn_prev " onClick={prevSLide}>
           &#10094;
         </a>
         {data.map((item, idx) => (
@@ -25,21 +24,23 @@ export default function ImagesSlider({ data }) {
             key={idx}
             src={item.src}
             alt={item.alt}
-            className={slide === idx ? "slide" : "slide__hidden"}
+            className={slide === idx ? "imageslider__slide" : "imageslider__slide_hidden"}
           ></img>
         ))}
-        <a className="btn btn__next btn__black" onClick={nextSLide}>
+        <a className="btn imageslider__btn imageslider__btn_next " onClick={nextSLide}>
           &#10095;
         </a>
       </div>
-      <span className="indicators">
+      <span className="imageslider__indicators">
         {data.map((_, idx) => {
           return (
             <button
               key={idx}
               onClick={() => setSlide(idx)}
               className={
-                slide === idx ? "indicator" : "indicator indicator__inactiv"
+                slide === idx
+                  ? "imageslider__indicator"
+                  : "imageslider__indicator imageslider__indicator_inactiv"
               }
             ></button>
           );

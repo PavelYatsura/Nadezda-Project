@@ -1,5 +1,5 @@
 import React from "react";
-import { ABOUT } from "../../main-iamge";
+import { ABOUT } from "../../images.js";
 import "./About.css";
 export default function About() {
   return (

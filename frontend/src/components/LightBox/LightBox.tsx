@@ -23,33 +23,45 @@ export default function LightBox({ data }) {
       : setSlideNumber(slideNumber + 1);
   }
   return (
-    <div>
+    <div className="lightbox">
       {openModal && (
-        <div className="slider">
-          <a className="btn btn__prev" onClick={handelClickBack}>
+        <div className="lightbox__slider slider ">
+          <a
+            className="btn slider__btn slider__btn_prev "
+            onClick={handelClickBack}
+          >
             &#10094;
           </a>
-          <span className="close" onClick={handelClickClose}>
+          <span className="slider__close" onClick={handelClickClose}>
             &times;
           </span>
-          <div className="slider__content">
-            <img className="fullScreenImage" src={data[slideNumber].src} />
+          <div className="slider__content content">
+            <img
+              className="content__fullScreenImage"
+              src={data[slideNumber].src}
+            />
           </div>
-          <a className="btn btn__next" onClick={handelClickNext}>
+          <a
+            className="btn slider__btn slider__btn_next"
+            onClick={handelClickNext}
+          >
             &#10095;
           </a>
         </div>
       )}
-      <div className="gallery">
+      <div className="lightbox__gallery gallery">
         {data &&
           data.map((slide, index) => {
             return (
               <div
-                className="single"
+                className="gallery__single single"
                 key={index}
                 onClick={() => handelOpenModal(index)}
               >
-                <img className="peronal-img" src={slide.src} />
+                <img
+                  className="single__img single__img_hover"
+                  src={slide.src}
+                />
               </div>
             );
           })}

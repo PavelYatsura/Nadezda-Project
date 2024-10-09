@@ -1,6 +1,6 @@
 import React from "react";
 import ComparisonImage from "../../components/ComparisonImage/ComparisonImage";
-import { retouchImage } from "../../retouche-image.js";
+import { retouchImage } from "../../images.js";
 import "./Retouch.css"
 
 export default function Retouch() {

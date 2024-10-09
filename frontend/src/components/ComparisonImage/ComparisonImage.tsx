@@ -4,13 +4,12 @@ import "./ComparisonImage.css";
 import React from "react";
 
 export default function ComparisonImage({ data }) {
-  
   const [number, setNumber] = useState(0);
   const imgIndex = (index) => {
     setNumber(index);
   };
-  const overlayRef = useRef<HTMLImageElement>(null);
-  const sliderRef = useRef<HTMLImageElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<HTMLSpanElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const [canStart, setCanStart] = useState(false);
   const slideStart = () => {
@@ -53,11 +52,11 @@ export default function ComparisonImage({ data }) {
   }, [canStart]);
   return (
     <div>
-      <div className="wrapper">
+      <div className="images">
         {data.map((item, index) => {
           return (
             <img
-              className="img"
+              className="images__img"
               key={index}
               src={item.srcBefore}
               onClick={() => imgIndex(index)}
@@ -65,8 +64,8 @@ export default function ComparisonImage({ data }) {
           );
         })}
       </div>
-      <div className="ComparisonImage-wrapper">
-        <div className="ComparisonImage">
+      <div className="ComparisonImage">
+        <div className="ComparisonImage__wrapper">
           <div>
             <img
               className="ComparisonImage__img"

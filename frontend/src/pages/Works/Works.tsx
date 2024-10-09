@@ -1,15 +1,18 @@
 import "./Works.css";
-import { IMAGES } from "../../main-iamge.js";
+import { workImage } from "../../images.js";
 import { Link } from "react-router-dom";
 import React from "react";
 
 export default function Work() {
   return (
     <>
-      <div className="container container-work">
-        {IMAGES.map((p) => (
-          <Link  key={p.id} to={`/photoshoots/${p.id}`}>
-            <img className="img-work" src={p.src} alt={p.src} />
+      <div className="container work">
+        {workImage.map((p) => (
+          <Link className="work__a" key={p.id} to={`/photoshoots/${p.id}`}>
+            <img className="work__img" src={p.src} alt={p.src} />
+            <div className="work__description_layer">
+              <p className="work__description">{p.name}</p>
+            </div>
           </Link>
         ))}
       </div>

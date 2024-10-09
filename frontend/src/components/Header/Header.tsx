@@ -7,20 +7,20 @@ export default function Header() {
     <header>
       <nav className="nav">
         <Link to="/" className="nav__title">
-          <h1 className="nav__title">NADEZHDA YATSURA</h1>
+          <h1 className="nav__title">НАДЕЖДА ЯЦУРА</h1>
         </Link>
         <div>
           <NavLink to="/" className="nav__link">
-            Works
+            Работы
           </NavLink>
           <NavLink to="/personal" className="nav__link">
-            Personal
+            Персональные
           </NavLink>
           <NavLink to="/retouche" className="nav__link">
-            Retouche
+            Ретушь
           </NavLink>
           <NavLink to="/about" className="nav__link">
-            About
+            О себе
           </NavLink>
         </div>
       </nav>
