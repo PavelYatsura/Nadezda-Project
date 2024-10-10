@@ -1,5 +1,5 @@
 .imageslider {
-  padding: 25px;
+  padding: 15px;
 }
 
 .imageslider__wrapper {
@@ -48,5 +48,5 @@
   cursor: pointer;
 }
 .imageslider__indicator_inactiv {
-  background-color: grey;
+  background-color: #000000;
 }

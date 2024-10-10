@@ -10,7 +10,6 @@ function App() {
     <div className="app">
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
     </div>
   );
 }

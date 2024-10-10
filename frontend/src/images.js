@@ -3,7 +3,7 @@ export const workImage = [
     id: 1,
     src: "./gallery/Work/Elvira/Elvira1.jpg",
     alt: "Elvira.jpg",
-    name: "Эльвира",
+    name: "Эля",
     images: [
       { src: "./gallery/Work/Elvira/Elvira1.jpg", alt: "Elvira.jpg" },
       { src: "./gallery/Work/Elvira/Elvira2.jpg", alt: "Elvira.jpg" },
@@ -21,7 +21,7 @@ export const workImage = [
     id: 2,
     src: "./gallery/Work/Dasha/Dasha1.jpg",
     alt: "Dasha.jpg",
-    name: "Дарья",
+    name: "Даша",
     images: [
       { src: "./gallery/Work/Dasha/Dasha1.jpg", alt: "Dasha.jpg" },
       { src: "./gallery/Work/Dasha/Dasha2.jpg", alt: "Dasha.jpg" },
@@ -60,7 +60,7 @@ export const workImage = [
     id: 4,
     src: "./gallery/Work/Alexandra/Alexandra1.jpg",
     alt: "Александра.jpg",
-    name: "Александра",
+    name: "Саша",
     images: [
       { src: "./gallery/Work/Alexandra/Alexandra1.jpg", alt: "Александра.jpg" },
       { src: "./gallery/Work/Alexandra/Alexandra2.jpg", alt: "Александра.jpg" },
@@ -72,7 +72,7 @@ export const workImage = [
     id: 5,
     src: "./gallery/Work/Dima/Dima1.jpg",
     alt: "Dima.jpg",
-    name: "Дмитрий",
+    name: "Дима",
     images: [
       { src: "./gallery/Work/Dima/Dima1.jpg", alt: "Dima.jpg" },
       { src: "./gallery/Work/Dima/Dima2.jpg", alt: "Dima.jpg" },
@@ -85,7 +85,7 @@ export const workImage = [
     id: 6,
     src: "./gallery/Work/RHDA2017/RHDA1.jpg",
     alt: "Dima.jpg",
-    name: "RHDA",
+    name: "RHDA 2017",
     images: [
       { src: "./gallery/Work/RHDA2017/RHDA1.jpg", alt: "RHDA.jpg" },
       { src: "./gallery/Work/RHDA2017/RHDA2.jpg", alt: "RHDA.jpg" },
