@@ -14,7 +14,7 @@ export default function Header() {
             Работы
           </NavLink>
           <NavLink to="/personal" className="nav__link">
-            Персональные
+            Личное
           </NavLink>
           <NavLink to="/retouche" className="nav__link">
             Ретушь

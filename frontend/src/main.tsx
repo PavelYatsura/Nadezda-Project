@@ -10,6 +10,7 @@ import App from "./App";
 import Photoshoots from "./pages/Photoshoots/Photoshoots";
 import React from "react";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

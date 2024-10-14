@@ -2,15 +2,15 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding: 0 160px;
   box-shadow: 0px 4px 20px rgba(31, 32, 65, 0.05);
   -moz-user-select: none;
   user-select: none;
   -webkit-user-select: none;
 }
 .nav__link {
-  margin-right: 2rem;
-  font-size: 1.4rem;
+  margin-right: 32px;
+  font-size: 16px;
   color: black;
   text-decoration: none;
   text-transform: uppercase;

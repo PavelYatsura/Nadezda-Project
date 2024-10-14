@@ -1,0 +1,14 @@
+@media (max-width: 1350px) {
+    .nav {
+        
+        padding: 0 100px;
+        
+      }
+}
+@media (max-width: 1100px) {
+    .nav {
+        
+        padding: 0 50px;
+        
+      }
+}
