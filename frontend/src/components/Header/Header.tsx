@@ -9,7 +9,7 @@ export default function Header() {
         <Link to="/" className="nav__title">
           <h1 className="nav__title">НАДЕЖДА ЯЦУРА</h1>
         </Link>
-        <div>
+        <div className="nav__link-wrapper">
           <NavLink to="/" className="nav__link">
             Работы
           </NavLink>

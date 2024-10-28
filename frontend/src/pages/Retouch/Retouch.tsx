@@ -5,7 +5,7 @@ import "./Retouch.css"
 
 export default function Retouch() {
   return (
-    <div className="container retouch ">
+    <div className="retouch ">
       <ComparisonImage data={retouchImage} />
     </div>
   );

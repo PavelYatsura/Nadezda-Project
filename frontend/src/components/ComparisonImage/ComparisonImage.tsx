@@ -28,9 +28,9 @@ export default function ComparisonImage({ data }) {
     slide(pos);
   };
   const getCursorPos = (e) => {
-    e = e || window.event;
+    let cX = e.clientX || e.changedTouches[0].clientX;
     let a = imageRef.current?.getBoundingClientRect();
-    let x = e.pageX - a!.left;
+    let x = cX - a!.left;
     x = x - window.scrollX;
     return x;
   };
@@ -50,21 +50,23 @@ export default function ComparisonImage({ data }) {
       window.removeEventListener("touchmove", slideMove);
     };
   }, [canStart]);
+
   return (
     <div>
-      <div className="images">
-        {data.map((item, index) => {
-          return (
-            <img
-              className="images__img"
-              key={index}
-              src={item.srcBefore}
-              onClick={() => imgIndex(index)}
-            />
-          );
-        })}
-      </div>
       <div className="ComparisonImage">
+        <div className="images">
+          {data.map((item, index) => {
+            return (
+              <img
+                className="images__img"
+                key={index}
+                src={item.srcBefore}
+                onClick={() => imgIndex(index)}
+              />
+            );
+          })}
+        </div>
+
         <div className="ComparisonImage__wrapper">
           <div>
             <img
@@ -82,7 +84,7 @@ export default function ComparisonImage({ data }) {
           <span
             className="ComparisonImage__slider"
             onMouseDown={slideStart}
-            onTouchStart={slideStart}
+            onTouchMove={slideStart}
             ref={sliderRef}
           ></span>
         </div>

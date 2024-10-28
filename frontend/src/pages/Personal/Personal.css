@@ -1,4 +1,5 @@
-.personal{
-  display: flex;
+.personal {
+  display: grid;
   justify-content: center;
+  padding: 1%;
 }

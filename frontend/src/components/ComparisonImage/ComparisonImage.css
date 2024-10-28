@@ -1,17 +1,19 @@
 .images {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
   -moz-user-select: none;
   user-select: none;
   -webkit-user-select: none;
+  margin-right: 20px;
 }
 .images__img {
-  height: 150px;
+  width: 141px;
 }
 .ComparisonImage{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 72%;
 }
 
 .ComparisonImage__wrapper {

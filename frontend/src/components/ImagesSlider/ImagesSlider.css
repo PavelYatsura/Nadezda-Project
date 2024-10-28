@@ -1,35 +1,83 @@
 .imageslider {
-  padding: 15px;
+  display: grid;
+  position: relative;
+  min-width: 100vw;
+  min-height: 90vh;
 }
 
 .imageslider__wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 0.1fr 3fr 0.1fr;
   align-items: center;
+  padding: 10px;
+  
 }
-
+.imageslider__image-wrapper {
+  justify-self: center;
+  align-self: center;
+  max-width: max-content;
+  max-height: max-content;
+  
+}
 .imageslider__slide {
-  margin-bottom: 20px;
   -moz-user-select: none;
   user-select: none;
   -webkit-user-select: none;
+  width: 100%;
+  height: 100%;
+  
 }
+.touchprev {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.touchnext {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
 .imageslider__slide_hidden {
   display: none;
 }
 .imageslider__btn {
-  position: absolute;
-  top: 50%;
+  height: 60px;
+  width: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  color: #000;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
-.imageslider__btn:hover {
-  background-color: #777777;
+
+@media (hover: hover) {
+  .imageslider__btn:hover {
+    background-color: #777777;
+  }
 }
-.imageslider__btn_prev {
-  left: 25px;
+@media (hover: none) {
+  .imageslider__btn:active {
+    background-color: #777777;
+  }
 }
+
 .imageslider__btn_next {
-  right: 25px;
+  display: grid;
+  justify-self: end;
 }
 .imageslider__indicators {
   display: flex;
@@ -49,4 +97,29 @@
 }
 .imageslider__indicator_inactiv {
   background-color: #000000;
+}
+
+@media (max-width: 915px) {
+  .imageslider__indicators {
+    display: none;
+  }
+  .imageslider__wrapper {
+    grid-template-columns:1fr;
+  }
+  .btn {
+    display: none;
+  }
+  .touchprev {
+    display: inline;
+  }
+  .touchnext {
+    display: inline;
+  }
+}
+@media (max-width: 700px) {
+  
+  
+}
+@media (max-width: 600px) {
+  
 }

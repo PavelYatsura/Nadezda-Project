@@ -2,7 +2,6 @@ import "./Works.css";
 import { workImage } from "../../images.js";
 import { Link } from "react-router-dom";
 import React from "react";
-import Footer from "../../components/Footer/Footer.js";
 
 export default function Work() {
   return (
@@ -17,7 +16,6 @@ export default function Work() {
           </Link>
         ))}
       </div>
-      <Footer></Footer>
     </>
   );
 }

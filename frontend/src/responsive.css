@@ -1,14 +1,32 @@
-@media (max-width: 1350px) {
-    .nav {
-        
-        padding: 0 100px;
-        
-      }
+@media (max-width: 1440px) {
+  .images__img {
+    width: 120px;
+  }
+  .ComparisonImage__img {
+    height: 700px;
+  }
+  .ComparisonImage__overlay {
+    height: 700px;
+  }
 }
-@media (max-width: 1100px) {
-    .nav {
-        
-        padding: 0 50px;
-        
-      }
+
+@media (max-width: 1024px) {
+  .ComparisonImage {
+    width: 81%;
+  }
+}
+
+@media (max-width: 486px) {
+  .ComparisonImage__img {
+    height: 528px;
+  }
+  .ComparisonImage__overlay {
+    height: 528px;
+  }
+  .images {
+    display: none;
+  }
+  .retouch {
+    padding: 0 3%;
+  }
 }
